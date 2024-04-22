@@ -23,6 +23,7 @@
 		BA8A07CD2BD67AE50040073D /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA8A07C92BD67AE50040073D /* Inter-Bold.ttf */; };
 		BA8A07CE2BD67AE50040073D /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA8A07CA2BD67AE50040073D /* Inter-SemiBold.ttf */; };
 		BA8A07CF2BD67AE50040073D /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA8A07CB2BD67AE50040073D /* Inter-Medium.ttf */; };
+		BA8A07D32BD684D90040073D /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07D22BD684D90040073D /* Label.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		BA8A07C92BD67AE50040073D /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
 		BA8A07CA2BD67AE50040073D /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		BA8A07CB2BD67AE50040073D /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		BA8A07D22BD684D90040073D /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		BA8A07882BD66C9C0040073D /* SeekMax */ = {
 			isa = PBXGroup;
 			children = (
+				BA8A07D02BD684AF0040073D /* UI Components */,
 				BA8A07BD2BD66EBE0040073D /* Resources */,
 				BA8A07BC2BD66EB30040073D /* Utils */,
 				BA8A07BB2BD66EA70040073D /* ViewModel */,
@@ -218,6 +221,22 @@
 				BA8A07CA2BD67AE50040073D /* Inter-SemiBold.ttf */,
 			);
 			path = InterFont;
+			sourceTree = "<group>";
+		};
+		BA8A07D02BD684AF0040073D /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A07D12BD684CA0040073D /* Labels */,
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		BA8A07D12BD684CA0040073D /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A07D22BD684D90040073D /* Label.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,6 +379,7 @@
 				BA8A07C62BD677BC0040073D /* Font.swift in Sources */,
 				BA8A07C42BD6776D0040073D /* AppearanceConfigurator.swift in Sources */,
 				BA8A07C12BD671CC0040073D /* LoginVC.swift in Sources */,
+				BA8A07D32BD684D90040073D /* Label.swift in Sources */,
 				BA8A078C2BD66C9C0040073D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
