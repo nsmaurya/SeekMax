@@ -26,6 +26,7 @@
 		BA8A07D32BD684D90040073D /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07D22BD684D90040073D /* Label.swift */; };
 		BA8A07D62BD686C10040073D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07D52BD686C10040073D /* Theme.swift */; };
 		BA8A07D92BD687210040073D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07D82BD687210040073D /* UIColorExtension.swift */; };
+		BA8A07DC2BD7F2C30040073D /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07DB2BD7F2C30040073D /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		BA8A07D22BD684D90040073D /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		BA8A07D52BD686C10040073D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		BA8A07D82BD687210040073D /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		BA8A07DB2BD7F2C30040073D /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 		BA8A07D02BD684AF0040073D /* UI Components */ = {
 			isa = PBXGroup;
 			children = (
+				BA8A07DA2BD7F2B20040073D /* Button */,
 				BA8A07D12BD684CA0040073D /* Labels */,
 			);
 			path = "UI Components";
@@ -259,6 +262,14 @@
 				BA8A07D82BD687210040073D /* UIColorExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		BA8A07DA2BD7F2B20040073D /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A07DB2BD7F2C30040073D /* Button.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,6 +412,7 @@
 				BA8A078A2BD66C9C0040073D /* AppDelegate.swift in Sources */,
 				BA8A07C62BD677BC0040073D /* Font.swift in Sources */,
 				BA8A07C42BD6776D0040073D /* AppearanceConfigurator.swift in Sources */,
+				BA8A07DC2BD7F2C30040073D /* Button.swift in Sources */,
 				BA8A07D92BD687210040073D /* UIColorExtension.swift in Sources */,
 				BA8A07C12BD671CC0040073D /* LoginVC.swift in Sources */,
 				BA8A07D32BD684D90040073D /* Label.swift in Sources */,
@@ -594,6 +606,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -622,6 +635,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
