@@ -53,9 +53,7 @@ class LoginVC: UIViewController {
         case .ready(let status):
             switch status {
             case .loginSuccessful:
-                let cache: Cache = UserDefaults.standard
-                cache.save(key: .isAlreadyLoggedin, value: true)
-                
+                SceneDelegate.loadHomePage()
             case .emailErrorUI(isValid: let isValid):
                 emailErrorLabel.isHidden = isValid
                 loginButton.isEnabled = viewModel.validateInputs()

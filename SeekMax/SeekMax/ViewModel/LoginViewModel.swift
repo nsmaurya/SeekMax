@@ -50,7 +50,9 @@ class LoginViewModel {
         
         //TODO:: ADD API here
         //after getting response from login, change the UI state
-        
+        //temporarily storing login state, as jwt token is not stored in keychain
+        let cache: Cache = UserDefaults.standard
+        cache.save(key: .isAlreadyLoggedin, value: true)
         self.viewState = .ready(.loginSuccessful) //api succeed
     }
     

@@ -198,6 +198,39 @@
             </objects>
             <point key="canvasLocation" x="299" y="-25"/>
         </scene>
+        <!--Profile TabVC-->
+        <scene sceneID="zrm-Mw-6Kx">
+            <objects>
+                <viewController storyboardIdentifier="ProfileTabVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ITV-zs-uOs" customClass="ProfileTabVC" customModule="SeekMax" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XAn-Tk-rJv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVv-9u-VIB" customClass="PrimaryButtonFilled" customModule="SeekMax" customModuleProvider="target">
+                                <rect key="frame" x="96.666666666666686" y="403.66666666666669" width="200" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="IvG-hj-gQS"/>
+                                    <constraint firstAttribute="width" constant="200" id="g1h-b1-Dbf"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutButtonTapped:" destination="ITV-zs-uOs" eventType="touchUpInside" id="yVb-bw-k5u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ygh-BK-lZ2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DVv-9u-VIB" firstAttribute="centerX" secondItem="XAn-Tk-rJv" secondAttribute="centerX" id="8es-Bf-RUe"/>
+                            <constraint firstItem="DVv-9u-VIB" firstAttribute="centerY" secondItem="XAn-Tk-rJv" secondAttribute="centerY" id="SmT-Eq-dQv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aXH-pY-wiK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1291" y="-25"/>
+        </scene>
     </scenes>
     <resources>
         <namedColor name="backgroundSecondary">

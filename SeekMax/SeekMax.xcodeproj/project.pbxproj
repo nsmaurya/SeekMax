@@ -37,6 +37,8 @@
 		BA8A07F22BD938600040073D /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07EE2BD938600040073D /* Cache.swift */; };
 		BA8A07F32BD938600040073D /* CacheKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07EF2BD938600040073D /* CacheKey.swift */; };
 		BA8A07F42BD938600040073D /* UserDefaultsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07F02BD938600040073D /* UserDefaultsCache.swift */; };
+		BA8A07F82BD93DA60040073D /* ProfileTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07F72BD93DA60040073D /* ProfileTabVC.swift */; };
+		BA8A07FA2BD93E4A0040073D /* ProfileTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07F92BD93E4A0040073D /* ProfileTabViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		BA8A07EE2BD938600040073D /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		BA8A07EF2BD938600040073D /* CacheKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheKey.swift; sourceTree = "<group>"; };
 		BA8A07F02BD938600040073D /* UserDefaultsCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsCache.swift; sourceTree = "<group>"; };
+		BA8A07F72BD93DA60040073D /* ProfileTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabVC.swift; sourceTree = "<group>"; };
+		BA8A07F92BD93E4A0040073D /* ProfileTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +151,6 @@
 				BA8A07BC2BD66EB30040073D /* Utils */,
 				BA8A07BB2BD66EA70040073D /* ViewModel */,
 				BA8A07BA2BD66E9F0040073D /* View */,
-				BA8A07F52BD93CFB0040073D /* Profile Tab */,
 				BA8A07B92BD66E910040073D /* Model */,
 				BA8A07972BD66C9E0040073D /* Info.plist */,
 			);
@@ -181,6 +184,7 @@
 		BA8A07BA2BD66E9F0040073D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BA8A07F52BD93CFB0040073D /* Profile Tab */,
 				BA8A07BE2BD671A50040073D /* Splash */,
 				BA8A07BF2BD671B70040073D /* Login */,
 				BA8A07EB2BD936050040073D /* RootTabPage */,
@@ -192,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				BA8A07DD2BD803210040073D /* LoginViewModel.swift */,
+				BA8A07F92BD93E4A0040073D /* ProfileTabViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -330,6 +335,7 @@
 		BA8A07F52BD93CFB0040073D /* Profile Tab */ = {
 			isa = PBXGroup;
 			children = (
+				BA8A07F72BD93DA60040073D /* ProfileTabVC.swift */,
 			);
 			path = "Profile Tab";
 			sourceTree = "<group>";
@@ -471,6 +477,7 @@
 			files = (
 				BA8A078E2BD66C9C0040073D /* SplashVC.swift in Sources */,
 				BA8A07D62BD686C10040073D /* Theme.swift in Sources */,
+				BA8A07F82BD93DA60040073D /* ProfileTabVC.swift in Sources */,
 				BA8A07DE2BD803210040073D /* LoginViewModel.swift in Sources */,
 				BA8A078A2BD66C9C0040073D /* AppDelegate.swift in Sources */,
 				BA8A07F32BD938600040073D /* CacheKey.swift in Sources */,
@@ -484,6 +491,7 @@
 				BA8A07F22BD938600040073D /* Cache.swift in Sources */,
 				BA8A07E42BD8AF0A0040073D /* Storyboard.swift in Sources */,
 				BA8A07ED2BD936230040073D /* RootVC.swift in Sources */,
+				BA8A07FA2BD93E4A0040073D /* ProfileTabViewModel.swift in Sources */,
 				BA8A07E22BD8AD640040073D /* ViewState.swift in Sources */,
 				BA8A07EA2BD934B00040073D /* BottomTabBarController.swift in Sources */,
 				BA8A07D32BD684D90040073D /* Label.swift in Sources */,

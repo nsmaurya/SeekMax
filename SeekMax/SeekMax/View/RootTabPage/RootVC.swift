@@ -53,12 +53,12 @@ class RootVC: UIViewController {
             image: UIImage(systemName: "house"),
             selectedImage: UIImage(systemName: "housed.filled")
         )
-        let accountVC = UIViewController()
-        accountVC.tabBarItem = UITabBarItem(
+        let profileTabVC = ProfileTabVC.instance(ProfileTabViewModel())
+        profileTabVC.tabBarItem = UITabBarItem(
             title: "Profile",
             image: UIImage(systemName: "person"),
             selectedImage: UIImage(systemName: "person.filled")
         )
-        tabController.viewControllers = [homeVC, accountVC]
+        tabController.viewControllers = [homeVC, profileTabVC]
     }
 }
