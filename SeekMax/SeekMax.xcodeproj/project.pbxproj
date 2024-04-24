@@ -32,6 +32,11 @@
 		BA8A07E22BD8AD640040073D /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07E12BD8AD640040073D /* ViewState.swift */; };
 		BA8A07E42BD8AF0A0040073D /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07E32BD8AF0A0040073D /* Storyboard.swift */; };
 		BA8A07E72BD8BB750040073D /* SceneDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07E62BD8BB750040073D /* SceneDelegateExtension.swift */; };
+		BA8A07EA2BD934B00040073D /* BottomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07E92BD934B00040073D /* BottomTabBarController.swift */; };
+		BA8A07ED2BD936230040073D /* RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07EC2BD936230040073D /* RootVC.swift */; };
+		BA8A07F22BD938600040073D /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07EE2BD938600040073D /* Cache.swift */; };
+		BA8A07F32BD938600040073D /* CacheKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07EF2BD938600040073D /* CacheKey.swift */; };
+		BA8A07F42BD938600040073D /* UserDefaultsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07F02BD938600040073D /* UserDefaultsCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +86,11 @@
 		BA8A07E12BD8AD640040073D /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 		BA8A07E32BD8AF0A0040073D /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		BA8A07E62BD8BB750040073D /* SceneDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateExtension.swift; sourceTree = "<group>"; };
+		BA8A07E92BD934B00040073D /* BottomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabBarController.swift; sourceTree = "<group>"; };
+		BA8A07EC2BD936230040073D /* RootVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootVC.swift; sourceTree = "<group>"; };
+		BA8A07EE2BD938600040073D /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		BA8A07EF2BD938600040073D /* CacheKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheKey.swift; sourceTree = "<group>"; };
+		BA8A07F02BD938600040073D /* UserDefaultsCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +147,7 @@
 				BA8A07BC2BD66EB30040073D /* Utils */,
 				BA8A07BB2BD66EA70040073D /* ViewModel */,
 				BA8A07BA2BD66E9F0040073D /* View */,
+				BA8A07F52BD93CFB0040073D /* Profile Tab */,
 				BA8A07B92BD66E910040073D /* Model */,
 				BA8A07972BD66C9E0040073D /* Info.plist */,
 			);
@@ -170,8 +181,9 @@
 		BA8A07BA2BD66E9F0040073D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BA8A07BF2BD671B70040073D /* Login */,
 				BA8A07BE2BD671A50040073D /* Splash */,
+				BA8A07BF2BD671B70040073D /* Login */,
+				BA8A07EB2BD936050040073D /* RootTabPage */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,6 +199,7 @@
 		BA8A07BC2BD66EB30040073D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				BA8A07F12BD938600040073D /* Store */,
 				BA8A07E12BD8AD640040073D /* ViewState.swift */,
 				BA8A07E32BD8AF0A0040073D /* Storyboard.swift */,
 			);
@@ -247,6 +260,7 @@
 		BA8A07D02BD684AF0040073D /* UI Components */ = {
 			isa = PBXGroup;
 			children = (
+				BA8A07E82BD934980040073D /* TabBarController */,
 				BA8A07DA2BD7F2B20040073D /* Button */,
 				BA8A07D12BD684CA0040073D /* Labels */,
 			);
@@ -275,6 +289,7 @@
 				BA8A07D82BD687210040073D /* UIColorExtension.swift */,
 				BA8A07DF2BD803460040073D /* StringExtension.swift */,
 				BA8A07E62BD8BB750040073D /* SceneDelegateExtension.swift */,
+				BA8A07F02BD938600040073D /* UserDefaultsCache.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -285,6 +300,38 @@
 				BA8A07DB2BD7F2C30040073D /* Button.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		BA8A07E82BD934980040073D /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A07E92BD934B00040073D /* BottomTabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		BA8A07EB2BD936050040073D /* RootTabPage */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A07EC2BD936230040073D /* RootVC.swift */,
+			);
+			path = RootTabPage;
+			sourceTree = "<group>";
+		};
+		BA8A07F12BD938600040073D /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A07EE2BD938600040073D /* Cache.swift */,
+				BA8A07EF2BD938600040073D /* CacheKey.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		BA8A07F52BD93CFB0040073D /* Profile Tab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Profile Tab";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,14 +473,19 @@
 				BA8A07D62BD686C10040073D /* Theme.swift in Sources */,
 				BA8A07DE2BD803210040073D /* LoginViewModel.swift in Sources */,
 				BA8A078A2BD66C9C0040073D /* AppDelegate.swift in Sources */,
+				BA8A07F32BD938600040073D /* CacheKey.swift in Sources */,
+				BA8A07F42BD938600040073D /* UserDefaultsCache.swift in Sources */,
 				BA8A07C62BD677BC0040073D /* Font.swift in Sources */,
 				BA8A07C42BD6776D0040073D /* AppearanceConfigurator.swift in Sources */,
 				BA8A07DC2BD7F2C30040073D /* Button.swift in Sources */,
 				BA8A07D92BD687210040073D /* UIColorExtension.swift in Sources */,
 				BA8A07E02BD803460040073D /* StringExtension.swift in Sources */,
 				BA8A07C12BD671CC0040073D /* LoginVC.swift in Sources */,
+				BA8A07F22BD938600040073D /* Cache.swift in Sources */,
 				BA8A07E42BD8AF0A0040073D /* Storyboard.swift in Sources */,
+				BA8A07ED2BD936230040073D /* RootVC.swift in Sources */,
 				BA8A07E22BD8AD640040073D /* ViewState.swift in Sources */,
+				BA8A07EA2BD934B00040073D /* BottomTabBarController.swift in Sources */,
 				BA8A07D32BD684D90040073D /* Label.swift in Sources */,
 				BA8A07E72BD8BB750040073D /* SceneDelegateExtension.swift in Sources */,
 				BA8A078C2BD66C9C0040073D /* SceneDelegate.swift in Sources */,

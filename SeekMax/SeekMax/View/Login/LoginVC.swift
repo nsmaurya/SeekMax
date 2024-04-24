@@ -53,7 +53,9 @@ class LoginVC: UIViewController {
         case .ready(let status):
             switch status {
             case .loginSuccessful:
-                print("Login successful...")
+                let cache: Cache = UserDefaults.standard
+                cache.save(key: .isAlreadyLoggedin, value: true)
+                
             case .emailErrorUI(isValid: let isValid):
                 emailErrorLabel.isHidden = isValid
                 loginButton.isEnabled = viewModel.validateInputs()
@@ -70,7 +72,7 @@ class LoginVC: UIViewController {
     
     // MARK: - Actions
     @IBAction private func loginButtonTapped(_ sender: Any) {
-        
+        viewModel.login()
     }
     
     @IBAction private func passwordFieldTextChanged(_ sender: Any) {

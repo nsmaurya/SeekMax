@@ -183,6 +183,21 @@
             </objects>
             <point key="canvasLocation" x="-721" y="-13"/>
         </scene>
+        <!--RootVC-->
+        <scene sceneID="SIn-18-g7L">
+            <objects>
+                <viewController storyboardIdentifier="RootVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dpq-IE-h0f" customClass="RootVC" customModule="SeekMax" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pqX-Iy-1Vb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2Bb-rz-5Ix"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H60-3h-BFz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="299" y="-25"/>
+        </scene>
     </scenes>
     <resources>
         <namedColor name="backgroundSecondary">

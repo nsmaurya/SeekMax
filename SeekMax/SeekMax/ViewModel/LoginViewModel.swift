@@ -45,6 +45,15 @@ class LoginViewModel {
         return true
     }
     
+    func login() {
+        //self.viewState = .loading //for showing loader while hitting login api
+        
+        //TODO:: ADD API here
+        //after getting response from login, change the UI state
+        
+        self.viewState = .ready(.loginSuccessful) //api succeed
+    }
+    
     func setEmail(_ text: String?) {
         email = text
         self.viewState = .ready(.emailErrorUI(isValid: email?.isValidEmail() == true))
