@@ -27,6 +27,11 @@
 		BA8A07D62BD686C10040073D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07D52BD686C10040073D /* Theme.swift */; };
 		BA8A07D92BD687210040073D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07D82BD687210040073D /* UIColorExtension.swift */; };
 		BA8A07DC2BD7F2C30040073D /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07DB2BD7F2C30040073D /* Button.swift */; };
+		BA8A07DE2BD803210040073D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07DD2BD803210040073D /* LoginViewModel.swift */; };
+		BA8A07E02BD803460040073D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07DF2BD803460040073D /* StringExtension.swift */; };
+		BA8A07E22BD8AD640040073D /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07E12BD8AD640040073D /* ViewState.swift */; };
+		BA8A07E42BD8AF0A0040073D /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07E32BD8AF0A0040073D /* Storyboard.swift */; };
+		BA8A07E72BD8BB750040073D /* SceneDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07E62BD8BB750040073D /* SceneDelegateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +76,11 @@
 		BA8A07D52BD686C10040073D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		BA8A07D82BD687210040073D /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		BA8A07DB2BD7F2C30040073D /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		BA8A07DD2BD803210040073D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		BA8A07DF2BD803460040073D /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		BA8A07E12BD8AD640040073D /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		BA8A07E32BD8AF0A0040073D /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		BA8A07E62BD8BB750040073D /* SceneDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +179,7 @@
 		BA8A07BB2BD66EA70040073D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				BA8A07DD2BD803210040073D /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -176,6 +187,8 @@
 		BA8A07BC2BD66EB30040073D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				BA8A07E12BD8AD640040073D /* ViewState.swift */,
+				BA8A07E32BD8AF0A0040073D /* Storyboard.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -260,6 +273,8 @@
 			isa = PBXGroup;
 			children = (
 				BA8A07D82BD687210040073D /* UIColorExtension.swift */,
+				BA8A07DF2BD803460040073D /* StringExtension.swift */,
+				BA8A07E62BD8BB750040073D /* SceneDelegateExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -409,13 +424,18 @@
 			files = (
 				BA8A078E2BD66C9C0040073D /* SplashVC.swift in Sources */,
 				BA8A07D62BD686C10040073D /* Theme.swift in Sources */,
+				BA8A07DE2BD803210040073D /* LoginViewModel.swift in Sources */,
 				BA8A078A2BD66C9C0040073D /* AppDelegate.swift in Sources */,
 				BA8A07C62BD677BC0040073D /* Font.swift in Sources */,
 				BA8A07C42BD6776D0040073D /* AppearanceConfigurator.swift in Sources */,
 				BA8A07DC2BD7F2C30040073D /* Button.swift in Sources */,
 				BA8A07D92BD687210040073D /* UIColorExtension.swift in Sources */,
+				BA8A07E02BD803460040073D /* StringExtension.swift in Sources */,
 				BA8A07C12BD671CC0040073D /* LoginVC.swift in Sources */,
+				BA8A07E42BD8AF0A0040073D /* Storyboard.swift in Sources */,
+				BA8A07E22BD8AD640040073D /* ViewState.swift in Sources */,
 				BA8A07D32BD684D90040073D /* Label.swift in Sources */,
+				BA8A07E72BD8BB750040073D /* SceneDelegateExtension.swift in Sources */,
 				BA8A078C2BD66C9C0040073D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

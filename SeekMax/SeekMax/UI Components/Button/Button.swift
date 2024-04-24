@@ -61,7 +61,8 @@ class PrimaryButtonFilled: Button {
     }
 
     func configure() {
-        self.backgroundColor = isEnabled ? UIColor.primaryButton : UIColor.bgSecondary
+        self.backgroundColor = isEnabled ? UIColor.primaryButton : UIColor.textSecondary
+        self.setTitleColor(isEnabled ? .textReversed : UIColor.textReversed.withAlphaComponent(0.2), for: .normal)
     }
 
     override func layoutSubviews() {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3YW-P6-dGt">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -10,10 +10,35 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--SplashVC-->
+        <scene sceneID="QBY-pe-s8S">
+            <objects>
+                <viewController storyboardIdentifier="SplashVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3YW-P6-dGt" customClass="SplashVC" customModule="SeekMax" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZBp-Zg-pt6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="hv3-P3-WY6">
+                                <rect key="frame" x="186.66666666666666" y="723" width="20" height="20"/>
+                                <color key="color" name="textSecondary"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gHl-38-UdO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gHl-38-UdO" firstAttribute="bottom" secondItem="hv3-P3-WY6" secondAttribute="bottom" constant="75" id="DG2-fM-vdo"/>
+                            <constraint firstItem="hv3-P3-WY6" firstAttribute="centerX" secondItem="ZBp-Zg-pt6" secondAttribute="centerX" id="lVi-fY-Yc9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vSt-pz-KIb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1685" y="-13"/>
+        </scene>
         <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="SeekMax" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginVC" customModule="SeekMax" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,7 +50,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="xi8-KM-W0r">
-                                                <rect key="frame" x="16" y="48.000000000000007" width="361" height="79.666666666666686"/>
+                                                <rect key="frame" x="16" y="48" width="361" height="57.333333333333343"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyJ-bx-fL9" customClass="CalloutLabel" customModule="SeekMax" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
@@ -42,9 +67,13 @@
                                                         <color key="textColor" name="textPrimary"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                                        <connections>
+                                                            <action selector="emailFieldTextChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="j9E-cw-7B5"/>
+                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="oap-nG-MbC"/>
+                                                        </connections>
                                                     </textField>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter valid email id" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kN7-yG-dPw" customClass="CaptionLabel" customModule="SeekMax" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="59.33333333333335" width="361" height="20.333333333333336"/>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter valid email id" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kN7-yG-dPw" customClass="CaptionLabel" customModule="SeekMax" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="57.333333333333343" width="361" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" systemColor="systemRedColor"/>
                                                         <nil key="highlightedColor"/>
@@ -56,7 +85,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ZAu-8n-fEU">
-                                                <rect key="frame" x="16" y="157" width="361" height="79.666666666666686"/>
+                                                <rect key="frame" x="16" y="134.66666666666666" width="361" height="57.333333333333343"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q59-9P-FMm" customClass="CalloutLabel" customModule="SeekMax" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
@@ -72,10 +101,14 @@
                                                         </constraints>
                                                         <color key="textColor" name="textPrimary"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" secureTextEntry="YES" textContentType="email"/>
+                                                        <connections>
+                                                            <action selector="passwordFieldTextChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="VmW-08-AOt"/>
+                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="ch6-sh-FQY"/>
+                                                        </connections>
                                                     </textField>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter valid password" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yX-kI-evF" customClass="CaptionLabel" customModule="SeekMax" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="59.333333333333321" width="361" height="20.333333333333336"/>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter valid password(Min 8 characters)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yX-kI-evF" customClass="CaptionLabel" customModule="SeekMax" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="57.333333333333343" width="361" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" systemColor="systemRedColor"/>
                                                         <nil key="highlightedColor"/>
@@ -87,12 +120,16 @@
                                                 </constraints>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JbR-bF-dCB" customClass="PrimaryButtonFilled" customModule="SeekMax" customModuleProvider="target">
-                                                <rect key="frame" x="48" y="339" width="297" height="48"/>
+                                                <rect key="frame" x="48" y="294.33333333333331" width="297" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="yjC-yx-AA4"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Login"/>
+                                                <connections>
+                                                    <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X7e-jg-mHF"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -134,25 +171,17 @@
                             <constraint firstItem="dm9-Ia-RVe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rpI-5H-xRI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailErrorLabel" destination="kN7-yG-dPw" id="LXv-SN-lD4"/>
+                        <outlet property="emailTextField" destination="UdQ-Wf-SPD" id="Bvz-i6-Wo6"/>
+                        <outlet property="loginButton" destination="JbR-bF-dCB" id="1cz-co-uwL"/>
+                        <outlet property="passwordErrorLabel" destination="5yX-kI-evF" id="l55-xZ-0TM"/>
+                        <outlet property="passwordTextField" destination="izJ-49-I7f" id="OAh-sX-fYe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1176.3358778625955" y="-12.67605633802817"/>
-        </scene>
-        <!--SplashVC-->
-        <scene sceneID="QBY-pe-s8S">
-            <objects>
-                <viewController storyboardIdentifier="LoginVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3YW-P6-dGt" customClass="SplashVC" customModule="SeekMax" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZBp-Zg-pt6">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="gHl-38-UdO"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vSt-pz-KIb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-178" y="-13"/>
+            <point key="canvasLocation" x="-721" y="-13"/>
         </scene>
     </scenes>
     <resources>
@@ -164,6 +193,9 @@
         </namedColor>
         <namedColor name="textReversed">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textSecondary">
+            <color red="0.41176470588235292" green="0.46274509803921571" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
