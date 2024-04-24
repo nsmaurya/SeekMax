@@ -56,6 +56,18 @@ class ProfileTabVC: UIViewController {
     
     // MARK: - Actions
     @IBAction private func logoutButtonTapped(_ sender: Any) {
-        viewModel.logout()
+        let alertController = UIAlertController(
+            title: "SeekMax",
+            message: "Are you sure you want to logout?",
+            preferredStyle: .alert
+        )
+        alertController.view.tintColor = UIColor.black
+        let notNowAction = UIAlertAction(title: "Not Now", style: .default) { (_) in }
+        alertController.addAction(notNowAction)
+        let enableAction = UIAlertAction(title: "Logout", style: .default) { (_) in
+            self.viewModel.logout()
+        }
+        alertController.addAction(enableAction)
+        self.present(alertController, animated: true, completion: nil)
     }
 }

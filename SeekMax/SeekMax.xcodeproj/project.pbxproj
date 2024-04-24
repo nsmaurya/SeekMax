@@ -39,6 +39,7 @@
 		BA8A07F42BD938600040073D /* UserDefaultsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07F02BD938600040073D /* UserDefaultsCache.swift */; };
 		BA8A07F82BD93DA60040073D /* ProfileTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07F72BD93DA60040073D /* ProfileTabVC.swift */; };
 		BA8A07FA2BD93E4A0040073D /* ProfileTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07F92BD93E4A0040073D /* ProfileTabViewModel.swift */; };
+		BA8A07FC2BD943F00040073D /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A07FB2BD943F00040073D /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		BA8A07F02BD938600040073D /* UserDefaultsCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsCache.swift; sourceTree = "<group>"; };
 		BA8A07F72BD93DA60040073D /* ProfileTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabVC.swift; sourceTree = "<group>"; };
 		BA8A07F92BD93E4A0040073D /* ProfileTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabViewModel.swift; sourceTree = "<group>"; };
+		BA8A07FB2BD943F00040073D /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +297,7 @@
 				BA8A07DF2BD803460040073D /* StringExtension.swift */,
 				BA8A07E62BD8BB750040073D /* SceneDelegateExtension.swift */,
 				BA8A07F02BD938600040073D /* UserDefaultsCache.swift */,
+				BA8A07FB2BD943F00040073D /* UIViewControllerExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				BA8A078A2BD66C9C0040073D /* AppDelegate.swift in Sources */,
 				BA8A07F32BD938600040073D /* CacheKey.swift in Sources */,
 				BA8A07F42BD938600040073D /* UserDefaultsCache.swift in Sources */,
+				BA8A07FC2BD943F00040073D /* UIViewControllerExtension.swift in Sources */,
 				BA8A07C62BD677BC0040073D /* Font.swift in Sources */,
 				BA8A07C42BD6776D0040073D /* AppearanceConfigurator.swift in Sources */,
 				BA8A07DC2BD7F2C30040073D /* Button.swift in Sources */,

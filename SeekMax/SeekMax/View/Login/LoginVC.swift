@@ -53,7 +53,9 @@ class LoginVC: UIViewController {
         case .ready(let status):
             switch status {
             case .loginSuccessful:
-                SceneDelegate.loadHomePage()
+                self.showAlertViewWithMessageAndActionHandler("SeekMax", message: "Login successful.") {
+                    SceneDelegate.loadHomePage()
+                }
             case .emailErrorUI(isValid: let isValid):
                 emailErrorLabel.isHidden = isValid
                 loginButton.isEnabled = viewModel.validateInputs()
