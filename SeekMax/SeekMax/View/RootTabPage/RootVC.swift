@@ -55,7 +55,7 @@ class RootVC: UIViewController {
         )
         let profileTabVC = ProfileTabVC.instance(ProfileTabViewModel())
         profileTabVC.tabBarItem = UITabBarItem(
-            title: "Profile",
+            title: "My Profile",
             image: UIImage(systemName: "person"),
             selectedImage: UIImage(systemName: "person.filled")
         )
